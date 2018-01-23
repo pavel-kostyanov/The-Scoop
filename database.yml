@@ -1,5 +1,84 @@
-users: {}
-articles: {}
-nextArticleId: 1
-comments: {}
-nextCommentId: 1
+users:
+  pavel:
+    username: pavel
+    articleIds:
+      - 3
+    commentIds: []
+  irina:
+    username: irina
+    articleIds: []
+    commentIds: []
+  Joe:
+    username: Joe
+    articleIds:
+      - 4
+    commentIds: []
+  smith:
+    username: smith
+    articleIds:
+      - 5
+    commentIds:
+      - 2
+      - 3
+      - 4
+articles:
+  '1': null
+  '2': null
+  '3':
+    id: 3
+    title: Hi! It's my first article
+    url: www.mynews.com
+    username: pavel
+    commentIds:
+      - 4
+    upvotedBy: []
+    downvotedBy: []
+    comments: []
+  '4':
+    id: 4
+    title: I'm Joe Cocker
+    url: www.cocker.org
+    username: Joe
+    commentIds:
+      - 2
+      - 3
+    upvotedBy:
+      - smith
+    downvotedBy: []
+    comments: []
+  '5':
+    id: 5
+    title: Agent Smith
+    url: www.cie.io
+    username: smith
+    commentIds: []
+    upvotedBy: []
+    downvotedBy: []
+nextArticleId: 6
+comments:
+  '1': null
+  '2':
+    id: 2
+    body: are you serious?
+    articleId: 4
+    username: smith
+    upvotedBy: []
+    downvotedBy:
+      - smith
+  '3':
+    id: 3
+    body: Hi Joe
+    articleId: 4
+    username: smith
+    upvotedBy:
+      - smith
+    downvotedBy: []
+  '4':
+    id: 4
+    body: You are not bad
+    articleId: 3
+    username: smith
+    upvotedBy:
+      - smith
+    downvotedBy: []
+nextCommentId: 5

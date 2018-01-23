@@ -295,8 +295,6 @@ function updateComment(url, request){
     response.status = 404;
   } else {
     savedComment.body = requestComment.body || savedComment.body;
-
-
     response.body = {article: savedComment};
     response.status = 200;
   }
@@ -367,9 +365,7 @@ function downvoteComment(url, request) {
 }
 
 function loadDatabase() {
-  if(database.articles.length > 0){
-  database = yaml.safeLoad(fs.readFileSync('./database.yml'));
-  }
+  return yaml.safeLoad(fs.readFileSync('./database.yml'));
 }
 
 function saveDatabase() {
