@@ -22,6 +22,22 @@
     "webpack": "^3.5.5"
   },
   "scripts": {
-    "test": "mocha"
-  }
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "description": "In this project, you will build all of the routing and database logic for an article submission web app called The Scoop.",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavel-kostyanov/The-Scoop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pavel-kostyanov/The-Scoop/issues"
+  },
+  "homepage": "https://github.com/pavel-kostyanov/The-Scoop#readme"
 }
